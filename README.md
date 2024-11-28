@@ -1,4 +1,4 @@
-# Matrix Multiplication: CPU vs CUDA-supported GPU
+# Matrix Multiplication: CPU vs CUDA-enabled GPU
 
 ## Performance on Nvidia RTX 30 Series
 
@@ -15,3 +15,12 @@ mkdir build
 cd build
 cmake ..
 make
+```
+
+#### Windows:
+```bash
+mkdir build
+cd build
+cmake ..
+msbuild ./matmul.sln
+```
