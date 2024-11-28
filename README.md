@@ -1,21 +1,17 @@
-Matrix multiplication: CPU  vs CUDA-supported GPU
-On Nvidia RTX 30 series:
-Time taken for CPU: 7918241 microseconds (7.92s)
-Time taken for GPU: 271797 microseconds  (0.27s)
+# Matrix Multiplication: CPU vs CUDA-supported GPU
 
--- Build project --
-First delete "build" folder
+## Performance on Nvidia RTX 30 Series
 
-Linux:
+- **Time taken for CPU:** 7.92 seconds (7918241 microseconds)
+- **Time taken for GPU:** 0.27 seconds (271797 microseconds)
 
+## Build Project
+
+### First, delete the `build` folder.
+
+#### Linux:
+```bash
 mkdir build
 cd build
 cmake ..
 make
-
-Windows:
-
-mkdir build
-cd build
-cmake ..
-msbuild ./matmul.sln
