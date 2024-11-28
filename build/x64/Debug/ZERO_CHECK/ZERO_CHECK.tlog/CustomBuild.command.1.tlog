@@ -1,0 +1,10 @@
+^E:\CPP\CUDACODE\MATMUL\BUILD\CMAKEFILES\D6FF73823735E8D1B89C9C13B634F1BA\GENERATE.STAMP.RULE
+setlocal
+C:\mingw64\bin\cmake.exe -SE:/Cpp/cudaCode/matMul -BE:/Cpp/cudaCode/matMul/build --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file E:/Cpp/cudaCode/matMul/build/matmul.sln
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
