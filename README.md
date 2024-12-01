@@ -1,16 +1,25 @@
 # Matrix Multiplication: CPU vs CUDA-enabled GPU
 
-## Performance on Nvidia RTX 30 Series
+### Test Setup
+```cpp
+/*
+A: mxn
+B: nxp
+C: mxp = A@B
+*/
+size_t m = 1024;
+size_t n = 1024;
+size_t p = 1024;
+mul<float>(m, n, p);
+```
 
-- **Time taken for CPU:** 7.92 seconds (7,684,532 microseconds)
-- **Time taken for GPU (Naive):** 0.16 seconds (162,475 microseconds)  
-  - **CPU and GPU (Naive):** Results are close, with an error within `0.0001`.
-- **Time taken for GPU (Tiled):** 0.019 seconds (19,206 microseconds)  
-  - **CPU and GPU (Tiled):** Results are close, with an error within `0.0001`.
+## Performance on Nvidia RTX 3050Ti
+
+- **Time taken for CPU:** 8.37 seconds (8,365,754 microseconds)
+- **Time taken for GPU (Naive):** 0.13 seconds (126,666 microseconds)  
+- **Time taken for GPU (Tiled):** 0.02 seconds (18,702 microseconds)  
 
 ## Build Project
-
-### First, delete the `build` folder.
 
 #### Linux:
 ```bash

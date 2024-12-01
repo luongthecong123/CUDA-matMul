@@ -16,7 +16,7 @@ Returns:
 {
     std::random_device r;
     std::default_random_engine e(r());
-    std::uniform_int_distribution<int> uniform_dist(-8, 8);
+    std::uniform_int_distribution<int> uniform_dist(-256, 256);
 
     std::vector<T> vec(n);
     for (size_t i{0}; i < n; ++i)

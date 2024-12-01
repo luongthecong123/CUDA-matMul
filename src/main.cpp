@@ -88,7 +88,7 @@ int main()
     // A: mxn
     // B: nxp
     // C: mxp
-    mul<int>(m, n, p);
+    mul<float>(m, n, p);
 
     return 0;
 }
