@@ -1,5 +1,6 @@
 #pragma once
 #include <vector>
+#include <cstddef>
 template<typename T>
 void matmul_cpu(const std::vector<T>& A, const std::vector<T>& B, std::vector<T>& C, size_t m, size_t n, size_t p)
 /*

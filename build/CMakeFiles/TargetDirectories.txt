@@ -1,3 +1,0 @@
-E:/Cpp/cudaCode/matMul/build/CMakeFiles/matmul.dir
-E:/Cpp/cudaCode/matMul/build/CMakeFiles/ALL_BUILD.dir
-E:/Cpp/cudaCode/matMul/build/CMakeFiles/ZERO_CHECK.dir

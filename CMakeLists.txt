@@ -1,4 +1,4 @@
-cmake_minimum_required(VERSION 3.25)
+cmake_minimum_required(VERSION 3.22)
 
 project(matmul LANGUAGES CXX CUDA)
 
@@ -15,6 +15,8 @@ set(SOURCES
 
 add_executable(${PROJECT_NAME} ${SOURCES})
 
+# For debugging purposes
+#target_compile_options(${PROJECT_NAME} PRIVATE $<$<COMPILE_LANGUAGE:CUDA>:-G>)
 target_link_libraries(${PROJECT_NAME} CUDA::cudart)
 
 set_target_properties(${PROJECT_NAME} PROPERTIES CUDA_SEPARABLE_COMPILATION ON)
